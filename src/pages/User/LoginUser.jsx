@@ -21,7 +21,7 @@ function LoginUser() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:4500/api/auth/login', {
+            const response = await axios.post('https://giant-waders.cyclic.app/api/auth/login', {
                 identifier: loginData.username,
                 password: loginData.password,
             });

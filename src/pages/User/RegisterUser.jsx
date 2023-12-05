@@ -25,7 +25,7 @@ function RegisterUser() {
         e.preventDefault(); // Previene la recarga de la página
         try {
             // Envía una solicitud POST al backend con los datos del formulario
-            const response = await axios.post('http://localhost:4500/api/auth/register', formData);
+            const response = await axios.post('https://giant-waders.cyclic.app/api/auth/register', formData);
             if (response.data) {
                 // Si el registro es exitoso, redirige al usuario al inicio de sesión
                 navigate('/iniciar-sesion');

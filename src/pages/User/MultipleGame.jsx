@@ -18,7 +18,7 @@ function MultipleChoiceGame() {
     useEffect(() => {
         const fetchPreguntas = async () => {
             try {
-                const response = await axios.get('http://localhost:4500/api/post');
+                const response = await axios.get('https://giant-waders.cyclic.app/api/post');
                 const preguntasOpcionMultiple = response.data.quizzes.filter((quiz) =>
                     quiz.section === seccion && quiz.questions.some(question => question.type === "multiple-choice")
                 );
