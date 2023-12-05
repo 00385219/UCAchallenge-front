@@ -1,0 +1,124 @@
+.ranking-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    background-color: var(--color-background);
+}
+
+
+.ranking-category {
+    margin: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; /* Permitirá el ajuste automático en pantallas más pequeñas */
+    gap: 20px;
+    width: 100%;
+}
+
+.ranking-category {
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 20%;
+    margin-bottom: 1rem;
+    height: 100%;
+}
+
+.ranking-category h2 {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.ranking-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ranking-category li {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+/* .player-name {
+     Estilos para el nombre 
+}
+
+.player-score {
+     Estilos para el puntaje 
+} */
+
+.search-ranking {
+    margin: 2rem;
+    width: 100%;
+    
+}
+
+.search-ranking input {
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: none;
+    margin-right: 1rem;
+    width: 30%;
+    font-size: 20px;
+}
+
+.search-ranking button {
+    margin: 2px;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--color-accent);
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .ranking-category {
+        width: calc(50% - 20px); /* Dos categorías por fila en tabletas */
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+    .ranking-category {
+        width: 100%; /* Una categoría por fila en móviles */
+    }
+
+    .search-ranking input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .search-ranking button {
+        width: 100%;
+    }
+}
+/* En tu archivo CSS (miEstilo.css) */
+.salir {
+    background-color: #f44336; /* Color de fondo rojo */
+    color: white; /* Texto en blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Padding */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    display: inline-block; /* Tipo de display */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen */
+    cursor: pointer; /* Cursor como puntero */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.salir:hover {
+    background-color: #d32f2f; /* Color de fondo al pasar el ratón por encima */
+}

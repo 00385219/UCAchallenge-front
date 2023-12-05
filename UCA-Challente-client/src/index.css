@@ -1,0 +1,27 @@
+:root {
+    --color-header: #1B2691;
+    --color-primary: #4A5086;
+    --color-footer: #2B2929;
+    --color-accent: #9747FF;
+    --color-background: #525FD6;
+    --color-informatica: #FF3D3D;
+    --color-cultura: #9E24D8;
+    --color-salvador: #34A853;
+    --font-family: 'Montserrat', sans-serif;
+  }
+  
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--color-background);
+    
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  

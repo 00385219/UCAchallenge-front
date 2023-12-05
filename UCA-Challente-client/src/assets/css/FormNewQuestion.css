@@ -1,0 +1,104 @@
+.form-new-question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--color-background);
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+h1 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.new-question-form {
+    background-color: var(--color-primary);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    font-size: 24px;
+}
+
+.new-question-form label {
+    display: block;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.new-question-form input,
+.new-question-form select,
+.new-question-form textarea,
+.new-question-form select {
+    width: 75%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.new-question-form textarea {
+    width: 100%; /* Ancho completo dentro de su contenedor */
+    height: 250px; /* Altura inicial */
+    min-height: 100px; /* Mínima altura que puede tener */
+    max-height: 400px; /* Máxima altura que puede tener */
+    padding: 0.5rem; /* Espaciado interno para el texto */
+    margin-bottom: 1rem; /* Espacio debajo del textarea */
+    border-radius: 5px; /* Esquinas redondeadas */
+    border: none; /* Sin borde */
+    font-size: 1rem; /* Tamaño de la fuente */
+    resize: none; /* Evitar que el usuario cambie el tamaño */
+}
+
+
+.new-question-form button {
+    background-color: var(--color-accent);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .new-question-form {
+        width: 90%;
+        
+    }
+}
+
+@media (max-width: 480px) {
+    .new-question-form input, .new-question-form select, .new-question-form textarea{
+        width: 75%;
+        justify-content: center;
+    }
+
+    .new-question-form textarea{
+        max-width: 75%;
+        height: 20%;
+    }
+
+    h1 {
+        font-size: 0px;
+    }
+
+    .new-question-form {
+        padding: 1rem;
+        text-align: center;
+        
+    }
+}

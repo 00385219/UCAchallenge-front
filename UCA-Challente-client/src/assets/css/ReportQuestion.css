@@ -1,0 +1,91 @@
+.report-question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--color-background);
+    flex: 1;
+    justify-content: center;
+    font-size: 25px;
+}
+
+h1{
+    text-align: center;
+    width: 50%;
+    margin: 20px;
+}
+
+.warning-icon {
+    width: 100px; 
+    
+}
+
+.report-form {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; 
+}
+
+.report-label {
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    display: block;
+}
+
+.report-button {
+    background-color: #FF3D3D;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        width: 70%;
+        font-size: 30px;
+    }
+
+    .warning-icon {
+        width: 80px;
+    }
+
+    .report-form {
+        max-width: 350px;
+    }
+
+    .report-button {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        width: 90%;
+    }
+
+    .warning-icon {
+        width: 60px;
+    }
+
+    .report-form {
+        max-width: 300px;
+    }
+
+    .report-button {
+        font-size: 18px;
+    }
+
+    .report-label {
+        padding: 8px 16px;
+    }
+}
+

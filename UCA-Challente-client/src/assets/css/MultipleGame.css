@@ -1,0 +1,157 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    flex: 1;
+    font-size: 30px;
+}
+
+.game-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.ucachallenge-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: default;
+}
+
+.exit-button {
+    background-color: var(--color-informatica);
+    border: 30px;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.question-box {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    align-items: center;
+}
+
+.options-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.option-label {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    /* user-select: none; */
+    /* Prevents text selection */
+}
+
+/* .option-input { */
+/* display: none; */
+/* Hide the default radio button */
+/* } */
+
+.option-input[type="radio"]:checked {
+    background-color: black;
+}
+
+.next-question-button {
+    background-color: var(--color-accent);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10rem;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.report-button {
+    background-color: var(--color-cultura);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 1rem;
+    cursor: pointer;
+}
+
+/* Media queries para tablets */
+@media (max-width: 768px) {
+    .game-container {
+        padding: 1rem;
+    }
+
+    .question-box {
+        margin: 1rem 0;
+        padding: 1rem;
+        width: 75%;
+        align-items: center;
+    }
+
+    .options-container {
+        flex-direction: column;
+        width: 75%;
+    }
+
+    .option-label {
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        /* Añade espacio entre los botones */
+    }
+
+    .next-question-button,
+    .report-button {
+        width: 75%;
+        padding: 1rem;
+        margin: 0.5rem 0;
+        font-size: 20px;
+    }
+}
+
+/* Media queries para celulares */
+@media (max-width: 480px) {
+    .game-container {
+        font-size: 20px;
+    }
+
+    .game-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ucachallenge-button {
+        margin-bottom: 1rem;
+    }
+
+    .exit-button {
+        position: static;
+        margin-bottom: 1rem;
+        border: 20px;
+    }
+
+    .question-box {
+        margin-bottom: 1rem;
+    }
+
+    .report-button {
+        position:-ms-page;
+        width: 50%;
+    }
+}
